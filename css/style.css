@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Capriola', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    background-color: #140422;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hide {
+    display: none !important;
+}
+
+.container {
+    min-width: 400px;
+    min-height: 400px;
+    background-color: #7B3E8C;
+    padding: 2rem;
+}
+
+/*IMC FOOOOOOOOOORM*/
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.inputsForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.formControl>label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    color: #ffffff;
+
+}
+
+.formControl>input {
+    padding: 0.8rem 0.8rem;
+    color: #000000;
+}
+
+.actionControl {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+    /*gap: distância entro os elementos, é uma regra de flex, note que os botões ficaram alinhados mas separadas. */
+}
+
+button {
+    padding: 1rem 1.5rem;
+    background-color: #F2CB05;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    color: #000000;
+}
+
+button:hover {
+    background-color: #caa900;
+}
+
+#btn-clear {
+    background-color: #f7264d;
+}
+
+#btn-clear:hover {
+    background-color: #f7264d;
+}
+
+/*TAAAABLE*/
+#result-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-number {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#imc-info {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+#result-container>h3 {
+    margin-top: 2rem;
+    color: #140422
+}
+
+#imc-table {
+    margin: 1.9rem 0;
+    font-size: 1rem;
+}
+
+.table-header,
+.table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #140422;
+}
+
+.table-header>h4,
+.table-data>p {
+    flex: 1;
+}
+
+.table-header>h4:nth-child(3),
+.table-data>p:nth-child(3) {
+    max-width: 80px;
+}
+
+#btn-back {
+    align-self: center;
+}
+
+.good {
+    color: #76c500;
+}
+
+.low {
+    color: #fcff2d;
+}
+
+.medium {
+    color: #f39200;
+}
+
+.hight {
+    color: rgb(196, 24, 24);
+}
